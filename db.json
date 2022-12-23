@@ -1,0 +1,17 @@
+{
+  "flipkart": [
+        {"id":"1",
+        "Store":"flipKart"
+      }
+  ],
+  "amazon": [
+    {"id":"1",
+        "Store":"zmazon"
+      }
+  ],
+  "Mintra": [
+    {"id":"1",
+    "Store":"Mintra"
+  }
+  ]
+}
