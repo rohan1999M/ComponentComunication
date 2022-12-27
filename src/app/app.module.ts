@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
+import {MatTabsModule} from '@angular/material/tabs';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import {MatTableModule} from '@angular/material/table';
     HttpClientModule,
     BrowserAnimationsModule,MatButtonModule,
     MatTableModule,MatToolbarModule,
+    MatTabsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

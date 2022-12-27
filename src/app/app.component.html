@@ -1,6 +1,25 @@
 
 <div class="Nav">
-  <button mat-flat-button>Flipkart</button>
+  <!-- <button mat-flat-button>Flipkart</button>
   <button mat-flat-button>Primary</button>
-  <button mat-flat-button>Mintra</button>
+  <button mat-flat-button>Mintra</button> -->
+  <mat-tab-group>
+
+    <mat-tab  label="Myntra">
+   
+      <app-table [site]="'Myntra'"></app-table>
+      
+    </mat-tab>
+  
+    <mat-tab  label="Amazon">
+  
+   <app-table [site]="'Amazon'"></app-table>
+  
+    </mat-tab>
+  
+    <mat-tab label="Flipcart">
+    <app-table [site]="'Flipkart'"></app-table>
+    </mat-tab>
+  
+  </mat-tab-group>
 </div>

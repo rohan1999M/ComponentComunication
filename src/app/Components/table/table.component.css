@@ -1,0 +1,31 @@
+/* ._table{
+    margin-left: 50px;
+    margin-top: 50px;
+} */
+._table{
+    width: 50%;
+    background-color: rgba(128, 128, 128, 0.559);
+    margin: 25px;
+    padding: 15px;
+  
+  }
+  ._table th,td{
+    border: 1px solid black;
+    padding: 8px;
+    outline: transparent;
+    text-align: center;
+  }
+
+
+
+  .form_control{
+    border: 1px solid bule;
+    background-color: transparent;
+    padding: 10px;
+   
+  }
+  input{
+    padding: 6px;
+    font-size: 15px;
+    text-align: center;
+  }

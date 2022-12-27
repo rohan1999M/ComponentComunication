@@ -1,1 +1,39 @@
-<p>table works!</p>
+
+<div>
+    <table class="_table">
+        <thead>
+            <tr>
+              <th>Id</th>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>TotalPrice</th>
+                <th>
+                    <div class="action_container">
+                      <button mat-raised-button [ngStyle]="{'color':'gold'}" (click)="addRow()">Add</button>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor= "let row of rows; let i = index;">
+            <td>{{i}}</td>
+            <td>
+            <input [(ngModel)]= "rows[i].Item" class="form-control" type="text" placeholder="item" />
+            </td>
+            <td>
+            <input [(ngModel)]="rows[i].Quantity" class="form-control" type="number" placeholder="quantity" />
+            </td>
+            <td>
+            <input [(ngModel)]="rows[i].Price" class="form-control" type="number" placeholder="price"/>
+            </td>
+            <td>{{rows[i].Quantity * rows[i].Price}}</td>
+            <td><button  mat-raised-button color="primary"(click)="deleteRow(i)">delete</button></td>
+           </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <app-summary [val]="object"></app-summary>
+</div>
