@@ -12,7 +12,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {FormsModule} from '@angular/forms'
     BrowserAnimationsModule,MatButtonModule,
     MatTableModule,MatToolbarModule,
     MatTabsModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

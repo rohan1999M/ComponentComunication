@@ -1,25 +1,59 @@
 
-<div class="Nav">
-  <!-- <button mat-flat-button>Flipkart</button>
-  <button mat-flat-button>Primary</button>
-  <button mat-flat-button>Mintra</button> -->
-  <mat-tab-group>
+<!-- <div class="Nav">
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle   [matMenuTriggerFor]="menu">Flipkart</mat-button-toggle>
+    <mat-button-toggle   [matMenuTriggerFor]="menu1">Amazon</mat-button-toggle>
+    <mat-button-toggle   [matMenuTriggerFor]="menu">Myntra</mat-button-toggle>
+  </mat-button-toggle-group>
+  
+  
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="onClothes();">Clothes</button>
+  <button mat-menu-item (click)="onShoes();">shoes</button>
+</mat-menu>
+<mat-menu #menu1="matMenu">
+  <button mat-menu-item (click)="onMobiles();">Mobiles</button>
+  <button mat-menu-item (click)="onWatches();">Watches</button>
+</mat-menu>
+
+
+<div *ngIf="clothes">
+    <app-table [site]="'Flipkart'"></app-table>
+</div>
+
+<div *ngIf="shoes">
+  <app-table [site]="'Flipkart'"></app-table>
+</div>
+
+<div *ngIf="watches">
+  <app-table [site]="'Amazon'" ></app-table>
+</div>
+
+<div *ngIf="moblie">
+  <app-table [site]="'Amazon'" ></app-table>
+</div> -->
+  
+<mat-tab-group>
 
     <mat-tab  label="Myntra">
-   
-      <app-table [site]="'Myntra'"></app-table>
+      
+      <app-table [siteName]="'myntra'"></app-table>
       
     </mat-tab>
   
     <mat-tab  label="Amazon">
   
-   <app-table [site]="'Amazon'"></app-table>
+   <app-table [siteName]="'amazon'"></app-table>
   
     </mat-tab>
   
     <mat-tab label="Flipcart">
-    <app-table [site]="'Flipkart'"></app-table>
+    <app-table [siteName]="'Flipkart'"></app-table>
     </mat-tab>
   
   </mat-tab-group>
-</div>
+
+
+
+
+

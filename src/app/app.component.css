@@ -9,3 +9,6 @@
 .mat-tab{
     color: Black;
 }
+.mat-button-toggle-group,.mat-button-toggle {
+    width: 100%;
+}
